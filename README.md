@@ -1,2 +1,5 @@
-# midnight-synth
-A dark purple/pink vscode theme
+# Midnight Synth
+
+My personal dark theme
+
+**Enjoy!**
