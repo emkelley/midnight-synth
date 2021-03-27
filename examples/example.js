@@ -3,6 +3,11 @@ const ID = process.env.SPOTIFY_CLIENT_ID;
 const SECRET = process.env.SPOTIFY_CLIENT_SECRET;
 const authBuffer = Buffer.from(`${ID}:${SECRET}`).toString("base64");
 
+export const double = (number) => {
+  const double = number * 2;
+  return double;
+};
+
 module.exports = {
   name: "song",
   aliases: ["music"],
