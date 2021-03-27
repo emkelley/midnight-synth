@@ -2,8 +2,14 @@
 
 All notable changes to the "midnight-synth" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 2.0.2
 
-## [Unreleased]
+- Tweaked colors
 
-- Initial release
+## 2.0.0
+
+- Removed extra styles that weren't being customized
+
+## 0.0.1 - 1.3.0
+
+- Just figuring out what style this theme is going to be
