@@ -1,10 +1,11 @@
 {
     "name": "midnight-synth",
     "displayName": "Midnight Synth",
-    "description": "A dark purple/blue theme for late night coding",
+    "description": "A dark purple/cyan theme for late night coding",
     "repository": "emkelley/midnight-synth",
+    "icon": "https://i.ibb.co/XLNWwjZ/icon.png",
     "publisher": "ekelley",
-    "version": "1.1.1",
+    "version": "1.2.2",
     "engines": {
         "vscode": "^1.46.0"
     },
