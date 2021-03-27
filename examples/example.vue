@@ -1,6 +1,6 @@
 <template>
-  <carousel :items-to-show="4.05">
-    <slide v-for="car in cars" :key="car.id">
+  <carousel id="carousel" :items-to-show="4.05">
+    <slide class="butts" v-for="car in cars" :key="car.id">
       <div style="width: 300px">
         <CardAutomotive
           :modelName="car.details.fullName"
@@ -11,6 +11,8 @@
           :modelDescription="car.details.descShort"
           :modelID="car.id"
         />
+        <h1 class="title">Hello</h1>
+        <router-link class="button">Link</router-link>
       </div>
     </slide>
 
@@ -22,6 +24,7 @@
 </template>
 
 <script>
+// comment
 import { reactive, computed } from "vue";
 import CardAutomotive from "@/components/CardAutomotive";
 import getCars from "@/utils/getCars";
@@ -29,6 +32,7 @@ import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 export default {
   components: { CardAutomotive, Carousel, Slide, Pagination, Navigation },
   setup() {
+    const string = "I AM A STRING";
     const cars = getCars();
     let state = reactive({
       currentOffset: 0,
@@ -66,7 +70,7 @@ export default {
       }
     };
 
-    return { state, atEndOfList, atHeadOfList, moveCarousel, cars };
+    return { state, atEndOfList, atHeadOfList, moveCarousel, cars, string };
   },
 };
 </script>

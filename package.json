@@ -1,14 +1,14 @@
 {
     "name": "midnight-synth",
     "displayName": "Midnight Synth",
-    "description": "A dark purple/cyan theme for late night coding",
+    "description": "A dark purple/cyan theme for late night coding. Still under active development.",
     "repository": {
         "type": "git",
         "url": "https://github.com/emkelley/midnight-synth"
     },
     "icon": "images/icon.png",
     "publisher": "ekelley",
-    "version": "1.2.2",
+    "version": "2.0.0",
     "engines": {
         "vscode": "^1.46.0"
     },
