@@ -1,4 +1,4 @@
-# Midnight Synth
+# Midnight Synth - VSCode Theme
 [![Version](https://vsmarketplacebadge.apphb.com/version-short/ekelley.midnight-synth.svg)](https://github.com/emkelley/midnight-synth)
 [![Downloads](https://vsmarketplacebadge.apphb.com/downloads/ekelley.midnight-synth.svg)](https://marketplace.visualstudio.com/items?itemName=ekelley.midnight-synth&ssr=false#overview)
 
