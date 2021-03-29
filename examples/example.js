@@ -8,6 +8,15 @@ export const double = (number) => {
   return double;
 };
 
+const number = 1234;
+let string = "string";
+const bool = true;
+let array = ["foo", "bar"];
+
+function foo() {
+  return array;
+}
+
 module.exports = {
   name: "song",
   aliases: ["music"],

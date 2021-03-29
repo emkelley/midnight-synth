@@ -1,38 +1,37 @@
 <template>
-  <carousel id="carousel" :items-to-show="4.05">
-    <slide class="butts" v-for="car in cars" :key="car.id">
-      <div style="width: 300px">
-        <CardAutomotive
-          :modelName="car.details.fullName"
-          :modelPrice="car.details.price"
-          :modelYear="car.details.year"
-          :modelMileage="car.details.mileage"
-          :modelSeats="car.details.seats"
-          :modelDescription="car.details.descShort"
-          :modelID="car.id"
-        />
-        <h1 class="title">Hello</h1>
-        <router-link class="button">Link</router-link>
+  <div>
+    <section class="demo">
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <h1 class="title">Lorem ipsum {{ data }}</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <CardAutomotive
+              :modelName="car.details.fullName"
+              :modelPrice="car.details.price"
+              :modelYear="car.details.year"
+              :modelMileage="car.details.mileage"
+              :modelID="car.id"
+            />
+            <input type="button" @click="foo(event)" value="Button" />
+          </div>
+        </div>
       </div>
-    </slide>
-
-    <template #addons>
-      <navigation />
-      <pagination />
-    </template>
-  </carousel>
+    </section>
+  </div>
 </template>
 
 <script>
 // comment
 import { reactive, computed } from "vue";
-import CardAutomotive from "@/components/CardAutomotive";
 import getCars from "@/utils/getCars";
+import CardAutomotive from "@/components/CardAutomotive";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+
 export default {
   components: { CardAutomotive, Carousel, Slide, Pagination, Navigation },
   setup() {
-    const string = "I AM A STRING";
+    const string = "string";
     const cars = getCars();
     let state = reactive({
       currentOffset: 0,
@@ -49,6 +48,11 @@ export default {
       ],
     });
 
+    const r = /((\d{3})(?:\.|-))?(\d{3})(?:\.|-)(\d{4})/g;
+    const m = r.exec("Call 1.800.555-1212 for info");
+    m.index;
+    JSON.stringify(m);
+
     const atEndOfList = computed(() => {
       return (
         state.currentOffset <=
@@ -60,6 +64,14 @@ export default {
       if (state.currentOffset === 0) return true;
       else return false;
     });
+
+    switch (asdf) {
+      case "asdf":
+        console.log("asdf");
+        break;
+      default:
+        console.log("default");
+    }
 
     const moveCarousel = (direction) => {
       // Find a more elegant way to express the :style. consider using props to make it truly generic
@@ -76,14 +88,25 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+    url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+
 .carousel {
   position: relative;
   text-align: center;
   box-sizing: border-box;
 }
-
+#bob {
+  color: blue;
+}
 .carousel * {
   box-sizing: border-box;
+  &::before {
+    color: rebeccapurple;
+  }
 }
 
 .carousel__track {
