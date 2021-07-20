@@ -1,27 +1,31 @@
 {
-    "name": "midnight-synth",
-    "displayName": "Midnight Synth",
-    "description": "A dark purple/cyan theme for late night coding. Still under active development.",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/emkelley/midnight-synth"
-    },
-    "icon": "images/icon.png",
-    "publisher": "ekelley",
-    "version": "2.0.6",
-    "engines": {
-        "vscode": "^1.46.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Midnight Synth",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Midnight Synth-color-theme.json"
-            }
-        ]
-    }
+  "name": "midnight-synth",
+  "displayName": "Midnight Synth",
+  "description": "A dark purple/cyan theme for late night coding. Still under active development.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emkelley/midnight-synth"
+  },
+  "scripts": {
+    "build:dev": "vsce package",
+    "publish": "vsce publish"
+  },
+  "icon": "images/icon.png",
+  "publisher": "ekelley",
+  "version": "2.1.1",
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Midnight Synth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Midnight Synth-color-theme.json"
+      }
+    ]
+  }
 }

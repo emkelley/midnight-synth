@@ -36,7 +36,7 @@
     "list.focusBackground": "#25064a",
     "list.focusForeground": "#ffffffd7",
     "list.warningForeground": "#72f1b8bb",
-    "activityBar.foreground": "#35ffec",
+    "activityBar.foreground": "#9c45ff",
     "activityBar.background": "#040015",
     "activityBar.inactiveForeground": "#ebd7ff66",
     "activityBarBadge.foreground": "#010011",
@@ -136,9 +136,9 @@
     "extensionButton.prominentHoverBackground": "#ff7edb",
     "pickerGroup.foreground": "#f97e72ea",
     "terminal.foreground": "#ffffff",
-    "terminal.ansiBlue": "#03edf9",
-    "terminal.ansiBrightBlue": "#03edf9",
-    "terminal.ansiBrightCyan": "#03edf9",
+    "terminal.ansiBlue": "#2544ce",
+    "terminal.ansiBrightBlue": "#039ff9",
+    "terminal.ansiBrightCyan": "#66f7ff",
     "terminal.ansiBrightGreen": "#72f1b8d8",
     "terminal.ansiBrightMagenta": "#ff7edb",
     "terminal.ansiBrightRed": "#fe4450",
@@ -146,9 +146,9 @@
     "terminal.ansiCyan": "#03edf9",
     "terminal.ansiGreen": "#72f1b8",
     "terminal.ansiMagenta": "#ff7edb",
-    "terminal.ansiRed": "#fe4450d5",
-    "terminal.ansiYellow": "#f97e72",
-    "terminal.selectionBackground": "#ffffff20",
+    "terminal.ansiRed": "#fd2836d5",
+    "terminal.ansiYellow": "#f9f072",
+    "terminal.selectionBackground": "#ffffff3d",
     "terminalCursor.background": "#ffffff",
     "terminalCursor.foreground": "#03edf9",
     "debugToolBar.background": "#463465",
@@ -185,7 +185,7 @@
         "punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#e6ce46e8"
+        "foreground": "#ffece3d0"
       }
     },
     {
@@ -197,16 +197,23 @@
     },
     {
       "name": "Variable",
-      "scope": ["variable", "entity.name.variable"],
+      "scope": ["variable"],
       "settings": {
-        "foreground": "#e868ff"
+        "foreground": "#c368ff"
+      }
+    },
+    {
+      "name": "Variable entity",
+      "scope": ["entity.name.variable"],
+      "settings": {
+        "foreground": "#68ff68"
       }
     },
     {
       "name": "Language variable",
       "scope": "variable.language",
       "settings": {
-        "foreground": "#fe4444",
+        "foreground": "#FF8C00",
         "fontStyle": "bold"
       }
     },
@@ -235,21 +242,21 @@
       "name": "Regex",
       "scope": "string.regexp",
       "settings": {
-        "foreground": "#f97e72"
+        "foreground": "#eb8455"
       }
     },
     {
       "name": "Number",
       "scope": "constant.numeric",
       "settings": {
-        "foreground": "#f97e72"
+        "foreground": "#ff7164"
       }
     },
     {
       "name": "Language constant (boolean, null)",
       "scope": "constant.language",
       "settings": {
-        "foreground": "#f97e72"
+        "foreground": "#ff7164"
       }
     },
     {
@@ -284,7 +291,7 @@
       "name": "Tag attribute",
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": "#d49853"
+        "foreground": "#ff3bef"
       }
     },
     {
@@ -313,7 +320,7 @@
       "name": "Function",
       "scope": ["entity.name.function", "variable.function"],
       "settings": {
-        "foreground": "#63e9f3"
+        "foreground": "#57dae4"
       }
     },
     {
@@ -341,7 +348,7 @@
       "name": "Control keyword",
       "scope": "keyword.control",
       "settings": {
-        "foreground": "#53d49e"
+        "foreground": "#ff57f7"
       }
     },
     {
