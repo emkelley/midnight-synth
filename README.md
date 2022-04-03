@@ -7,7 +7,8 @@ My personal dark theme. A mix of some of my favorite themes: Tokyo Night, Synthw
 
 
 
-![js](images/js.png)
+![image](https://user-images.githubusercontent.com/11874169/161438907-3c91c856-6ea0-47fe-a1e2-5daf90431973.png)
+
 
 # Installation
 
