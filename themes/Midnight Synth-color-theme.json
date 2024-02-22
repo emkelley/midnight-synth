@@ -32,7 +32,7 @@
     "list.activeSelectionForeground": "#eaeaea",
     "tree.indentGuidesStroke": "#5300a5d5",
     "list.dropBackground": "#1f003f",
-    "list.highlightForeground": "#8655f8",
+    "list.highlightForeground": "#eeff005e",
     "list.focusBackground": "#25064a",
     "list.focusForeground": "#ffffffd7",
     "list.warningForeground": "#72f1b8bb",
@@ -79,11 +79,11 @@
     "editor.findMatchBackground": "#D18616bb",
     "editor.findMatchHighlightBackground": "#D1861655",
     "editor.findRangeHighlightBackground": "#34294f1a",
-    "editor.hoverHighlightBackground": "#463564",
+    "editor.hoverHighlightBackground": "#46356446",
     "editor.lineHighlightBorder": "#7059AB66",
     "editor.rangeHighlightBackground": "#49549539",
-    "editorIndentGuide.background": "#444251",
-    "editorIndentGuide.activeBackground": "#A148AB80",
+    "editorIndentGuide.background1": "#444251",
+    "editorIndentGuide.activeBackground1": "#A148AB80",
     "editorRuler.foreground": "#A148AB80",
     "editorCodeLens.foreground": "#ffffff7c",
     "editorBracketMatch.background": "#34294f66",
@@ -106,7 +106,7 @@
     "editorWidget.border": "#ffffff22",
     "editorWidget.resizeBorder": "#ffffff44",
     "editorSuggestWidget.highlightForeground": "#f97e72",
-    "editorSuggestWidget.selectedBackground": "#ffffff36",
+    "editorSuggestWidget.selectedBackground": "#ff00005e",
     "peekView.border": "#495495",
     "peekViewEditor.background": "#232530",
     "peekViewEditor.matchHighlightBackground": "#D18616bb",
@@ -179,11 +179,7 @@
     },
     {
       "name": "String",
-      "scope": [
-        "string.quoted",
-        "string.template",
-        "punctuation.definition.string"
-      ],
+      "scope": ["string.quoted", "string.template", "punctuation.definition.string"],
       "settings": {
         "foreground": "#ffece3d0"
       }
@@ -352,6 +348,13 @@
       }
     },
     {
+      "name": "Control keyword",
+      "scope": ["keyword.control", "source.css"],
+      "settings": {
+        "foreground": "#36f9f6de"
+      }
+    },
+    {
       "name": "Operator",
       "scope": "keyword.operator",
       "settings": {
@@ -359,14 +362,17 @@
       }
     },
     {
-      "name": "Special operator",
-      "scope": [
-        "keyword.operator.new",
-        "keyword.operator.expression",
-        "keyword.operator.logical"
-      ],
+      "name": "Vue Template Tag",
+      "scope": ["entity.name.tag.template.html", "source.vue"],
       "settings": {
-        "foreground": "#53d49e"
+        "foreground": "#50bbe6"
+      }
+    },
+    {
+      "name": "Special operator",
+      "scope": ["keyword.operator.new", "keyword.operator.expression", "keyword.operator.logical"],
+      "settings": {
+        "foreground": "#48ffb3"
       }
     },
     {
@@ -430,10 +436,7 @@
     },
     {
       "name": "CSS property",
-      "scope": [
-        "support.type.property-name.css",
-        "support.type.property-name.json"
-      ],
+      "scope": ["support.type.property-name.css", "support.type.property-name.json"],
       "settings": {
         "foreground": "#8ba6ff"
       }
@@ -563,10 +566,7 @@
     },
     {
       "name": "C# properties and fields",
-      "scope": [
-        "entity.name.variable.field.cs",
-        "entity.name.variable.property.cs"
-      ],
+      "scope": ["entity.name.variable.field.cs", "entity.name.variable.property.cs"],
       "settings": {
         "foreground": "#ff7edb"
       }
@@ -581,10 +581,7 @@
     },
     {
       "name": "C preprocessors",
-      "scope": [
-        "keyword.control.directive.include.c",
-        "keyword.control.directive.define.c"
-      ],
+      "scope": ["keyword.control.directive.include.c", "keyword.control.directive.define.c"],
       "settings": {
         "foreground": "#72f1b8"
       }
@@ -613,10 +610,7 @@
     },
     {
       "name": "C++ include",
-      "scope": [
-        "keyword.control.directive.include.cpp",
-        "keyword.control.directive.define.cpp"
-      ],
+      "scope": ["keyword.control.directive.include.cpp", "keyword.control.directive.define.cpp"],
       "settings": {
         "foreground": "#72f1b8"
       }
@@ -773,10 +767,7 @@
     },
     {
       "name": "Markdown links and image paths",
-      "scope": [
-        "markup.underline.link.markdown",
-        "markup.inline.raw.string.markdown"
-      ],
+      "scope": ["markup.underline.link.markdown", "markup.inline.raw.string.markdown"],
       "settings": {
         "foreground": "#72f1b8",
         "fontStyle": "italic"
@@ -815,10 +806,7 @@
     },
     {
       "name": "Markdown quotes",
-      "scope": [
-        "punctuation.definition.quote.begin.markdown",
-        "markup.quote.markdown"
-      ],
+      "scope": ["punctuation.definition.quote.begin.markdown", "markup.quote.markdown"],
       "settings": {
         "foreground": "#72f1b8"
       }

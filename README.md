@@ -15,4 +15,6 @@ My personal dark theme. A mix of some of my favorite themes: Tokyo Night, Synthw
 4.  Search for `midnight synth`
 5.  Click **Install** to install it
 6.  Click **Reload** to finish installing
-7.  Then, from the menu: File > Preferences > Color Theme > **Midnight Synth**
+7.  `File > Preferences > Color Theme > Midnight Synth`
+8.  ???
+9.  Profit
