@@ -351,14 +351,14 @@
       "name": "Control keyword",
       "scope": ["keyword.control", "source.css"],
       "settings": {
-        "foreground": "#36f9f6de"
+        "foreground": "#ff57f7"
       }
     },
     {
       "name": "Operator",
       "scope": "keyword.operator",
       "settings": {
-        "foreground": "#53a5d4"
+        "foreground": "#53d5d4"
       }
     },
     {
